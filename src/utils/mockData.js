@@ -1,0 +1,240 @@
+const resList = [
+  {
+    type: "restaurant",
+    data: {
+      id: "1",
+      name: "Meghana Foods",
+      cuisines: [
+        "Biryani",
+        "North Indian",
+        "Asian",
+        "American",
+        "Chinese",
+        "Desserts",
+      ],
+      avgRating: "4.5",
+      costForTwo: 40000,
+      deliveryTime: 38,
+      cloudinaryImgId:
+        "fl_lossy,f_auto,q_auto,w_1600,h_640,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2026/7/22/a07653c5-2981-4ee0-86e1-b4b0cc410b38_229.jpg",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "2",
+      name: "KFC",
+      cuisines: ["Burgers", "Fast Food", "American", "Snacks"],
+      avgRating: "4.1",
+      costForTwo: 60000,
+      deliveryTime: 31,
+      cloudinaryImgId:
+        "fl_lossy,f_auto,q_auto,w_1600,h_640,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2026/7/1/2b11b4e1-72fd-4f29-a32a-68a9151e85fa_671928.JPG",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "3",
+      name: "Burger King",
+      cuisines: [
+        "Burgers",
+        "Fast Food",
+        "American",
+        "Snacks",
+        "Chinese",
+        "Desserts",
+      ],
+      avgRating: "3.7",
+      costForTwo: 50000,
+      deliveryTime: 27,
+      cloudinaryImgId:
+        "fl_lossy,f_auto,q_auto,w_1600,h_640,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/ac30c19f-5572-448a-9c6a-44be9d986625_5934.jpg",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "4",
+      name: "Pizza Hut",
+      cuisines: ["Pizzas"],
+      avgRating: "4.3",
+      costForTwo: 35000,
+      deliveryTime: 35,
+      cloudinaryImgId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/9/a1e023e4-bdf3-4bcb-b4d9-2498ba52528e_1003414.JPG",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "5",
+      name: "Adil Hotel",
+      cuisines: ["North Indian", "Biryani", "Tandoor"],
+      avgRating: "4.3",
+      costForTwo: 15000,
+      deliveryTime: 37,
+      cloudinaryImgId: "gp1ityra6utvzqn6ghnv",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "6",
+      name: "Satkar Restaurant",
+      cuisines: ["North Indian", "Chinese", "Indian"],
+      avgRating: "4.2",
+      costForTwo: 25000,
+      deliveryTime: 35,
+      cloudinaryImgId: "rvxp5xbniat84r6efku2",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "7",
+      name: "Champaran Handi Restaurant",
+      cuisines: ["North Indian"],
+      avgRating: "4.3",
+      costForTwo: 20000,
+      deliveryTime: 43,
+      cloudinaryImgId: "xph0vf5pvbxjf8xchwjk",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "8",
+      name: "Jai Ganesh Bhojnalaya",
+      cuisines: ["North Indian", "South Indian", "Indian", "Chinese"],
+      avgRating: "4.1",
+      costForTwo: 20000,
+      deliveryTime: 42,
+      cloudinaryImgId: "yzgqriufpzmloogcn2vl",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "9",
+      name: "Gupta Bhojnalay",
+      cuisines: ["Fast Food", "Indian", "Beverages"],
+      avgRating: "4.8",
+      costForTwo: 20000,
+      deliveryTime: 41,
+      cloudinaryImgId: "jo9pdipf4elcuch8g55q",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "10",
+      name: "Mr. Gurung Momo & Chinese Corner",
+      cuisines: ["Momos", "Chinese", "Fast Food"],
+      avgRating: "4.3",
+      costForTwo: 15000,
+      deliveryTime: 42,
+      cloudinaryImgId: "h7oibtpm7kqks8cqz3gh",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "11",
+      name: "Sab Ghar Tak Foods",
+      cuisines: [
+        "North Indian",
+        "South Indian",
+        "Chinese",
+        "Beverages",
+        "Fast Food",
+        "Desserts",
+      ],
+      avgRating: "4.1",
+      costForTwo: 20000,
+      deliveryTime: 46,
+      cloudinaryImgId: "ryzswg44bt7thqzkuaj4",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "12",
+      name: "The Fusion Lounge",
+      cuisines: [
+        "South Indian",
+        "Chinese",
+        "Beverages",
+        "Fast Food",
+        "Desserts",
+      ],
+      avgRating: "4.2",
+      costForTwo: 30000,
+      deliveryTime: 45,
+      cloudinaryImgId: "fa4944f0cfdcbca2bec1f3ab8e3db3f7",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "13",
+      name: "Satkar Restaurant",
+      cuisines: ["North Indian", "Chinese", "Indian"],
+      avgRating: "4.2",
+      costForTwo: 25000,
+      deliveryTime: 35,
+      cloudinaryImgId: "rvxp5xbniat84r6efku2",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "14",
+      name: "Champaran Handi Restaurant",
+      cuisines: ["North Indian"],
+      avgRating: "4.3",
+      costForTwo: 20000,
+      deliveryTime: 43,
+      cloudinaryImgId: "xph0vf5pvbxjf8xchwjk",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "15",
+      name: "Jai Ganesh Bhojnalaya",
+      cuisines: ["North Indian", "South Indian", "Indian", "Chinese"],
+      avgRating: "4.1",
+      costForTwo: 20000,
+      deliveryTime: 42,
+      cloudinaryImgId: "yzgqriufpzmloogcn2vl",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "16",
+      name: "Gupta Bhojnalay",
+      cuisines: ["Fast Food", "Indian", "Beverages"],
+      avgRating: "4.8",
+      costForTwo: 20000,
+      deliveryTime: 41,
+      cloudinaryImgId: "jo9pdipf4elcuch8g55q",
+    },
+  },
+  {
+    type: "restaurant",
+    data: {
+      id: "17",
+      name: "Roof 5",
+      cuisines: ["Indian"],
+      avgRating: "4.2",
+      costForTwo: 20000,
+      deliveryTime: 54,
+      cloudinaryImgId: "glepanv4xjfnhsbieam1",
+    },
+  },
+];
+
+//default export
+export default resList;

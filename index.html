@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <h1>Not Rendered</h1>
+    </div>
     <!-- <script>  // This script is used to create a heading element and append it to the root div using JS.
         const heading = document.createElement('h1');
         heading.innerHTML = "Hello World from script!";
@@ -15,14 +17,14 @@
     </script> -->
 
     <!-- Below two lines used to load react and react-dom libraries from CDN. -->
-    <script
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
+    ></script> -->
 
     <!-- <script> // This script is used to create a heading element and append it to the root div using React.
       const heading = React.createElement("h1", {}, "Hello World from React!");
@@ -32,6 +34,6 @@
       root.render(heading);
     </script> -->
 
-    <script src="app.js"></script>
+    <script type="module" src="src/App.js"></script>
   </body>
 </html>

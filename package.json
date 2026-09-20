@@ -1,0 +1,33 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is from namaste react course",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ch-Sandeep/namaste-react.git"
+  },
+  "author": "sandeep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ch-Sandeep/namaste-react/issues"
+  },
+  "homepage": "https://github.com/Ch-Sandeep/namaste-react#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "parcel": "^2.16.4",
+    "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
