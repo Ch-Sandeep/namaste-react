@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "watch-test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,25 @@
   },
   "homepage": "https://github.com/Ch-Sandeep/namaste-react#readme",
   "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-react": "^7.29.7",
     "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.3",
+    "babel-jest": "^30.5.2",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
+    "jest-fixed-jsdom": "^0.0.11",
     "parcel": "^2.16.4",
     "tailwindcss": "^4.3.3"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-redux": "^9.3.0",
     "react-router-dom": "^7.18.3"
   },
   "browserslist": [

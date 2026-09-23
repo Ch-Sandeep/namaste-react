@@ -8,7 +8,7 @@ const RestaurantCard = (props) => {
   const context = useContext(UserContext);
 
   return (
-    <div className="m-4 p-4 w-67 bg-gray-100 rounded-lg hover:bg-gray-300">
+    <div data-testid="resCard" className="m-4 p-4 w-67 bg-gray-100 rounded-lg hover:bg-gray-300">
       <img
         className="rounded-lg"
         src={CDN_URL + cloudinaryImageId}

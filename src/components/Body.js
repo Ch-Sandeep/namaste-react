@@ -58,6 +58,7 @@ const Body = () => {
         <div className="m-3 p-3">
           <input
             type="text"
+            data-testid="searchInput"
             className="border border-solid"
             placeholder="Search for restaurants"
             // binding value of input box with the searchText state variable (Doing this as we need value of input box inside search button onClick func)
@@ -86,10 +87,9 @@ const Body = () => {
             className="px-4 py-2 bg-gray-100 cursor-pointer rounded-lg"
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
-                (restaurant) => Number(restaurant.info.avgRating) > 4,
+                (restaurant) => Number(restaurant.info.avgRating) > 4.3,
               );
-
-              setListOfRestaurants(filteredList);
+              setFilteredRestaurants(filteredList);
             }}
           >
             Top Rated Restaurants
@@ -100,7 +100,7 @@ const Body = () => {
           <label>UserName:</label>
           <input
             className="border border-black p-2 mx-2"
-            value = {loggedInUser}
+            value={loggedInUser}
             onChange={(e) => setUserName(e.target.value)}
           />
         </div>
